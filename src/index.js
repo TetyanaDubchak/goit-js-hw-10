@@ -34,7 +34,7 @@ function onSelectCat(e) {
 };
 
 function createCatMarkUp(arr) {
-    const makeCatMark = ({ url, name, wikipedia_url, temperament }) => {
+    const makeCatMark = ({ url, name, breeds: wikipedia_url, breeds: temperament }) => {
         `<img class="img-cat" src='${url}' alt="" /> 
         <h2 class="cat-name"> ${name} </h2>
         <p class="cat-describe">${wikipedia_url}</p>
