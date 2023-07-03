@@ -15,13 +15,13 @@ const failureText = document.querySelector('.error');
 fetchBreeds().then(data => {
     
     const makeOptionInSelect = ({ id, name }) => `<option value = '${id}'> ${name} </option>`;
-    
+   
     const markUp = data.map(obj => makeOptionInSelect(obj));
 
     selectBreeds.insertAdjacentHTML('beforeend', markUp);
     new SlimSelect({
         select: '.breed-select',
-    })
+    });
         
 }).catch(err => Notiflix.Notify.failure(failureText));
 
@@ -36,22 +36,19 @@ function onSelectCat(e) {
         then(catData => {
             console.log(catData);
             createCatMarkUp(catData); 
-            wrapperForCats.innerHTML = createCatMarkUp(catData)
         }).
-        catch(err => console.log(err));
+        catch(err => Notiflix.Notify.failure(failureText));
 };
 
 function createCatMarkUp(arr) {
-    const makeCatMark = ({ url, breeds: name, breeds: wikipedia_url, breeds: temperament }) => {
+    const makeCatMark = ({ url, breeds: name, breeds: description, breeds: temperament }) => {
         `<img class="img-cat" src='${url}' alt="" /> 
         <h2 class="cat-name"> ${name} </h2>
-        <p class="cat-describe">${wikipedia_url}</p>
+        <p class="cat-describe">${description}</p>
         <p class="cat-temp">${temperament}</p>`
     };
     const markUpCat = arr.map(obj => makeCatMark(obj)).join('');
     console.log(markUpCat);
-    
-    
-}
+    wrapperForCats.innerHTML = markUpCat;
+};
 
-Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
