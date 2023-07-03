@@ -41,14 +41,14 @@ function onSelectCat(e) {
 };
 
 function createCatMarkUp(arr) {
-    const makeCatMark = ({ url, breeds: name, breeds: description, breeds: temperament }) => {
+    const makeCatMark = ({ url, breeds}) => {
         `<img class="img-cat" src='${url}' alt="" /> 
-        <h2 class="cat-name"> ${name} </h2>
-        <p class="cat-describe">${description}</p>
-        <p class="cat-temp">${temperament}</p>`
+        <h2 class="cat-name"> ${breeds[0].name} </h2>
+        <p class="cat-describe">${breeds[0].description}</p>
+        <p class="cat-temp">${breeds[0].temperament}</p>`
     };
     const markUpCat = arr.map(obj => makeCatMark(obj)).join('');
-    console.log(markUpCat);
+    console.log(makeCatMark);
     wrapperForCats.innerHTML = markUpCat;
 };
 
