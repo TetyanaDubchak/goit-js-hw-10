@@ -4,9 +4,12 @@
     border: 2px solid #FFF;
     border-radius: 50%;
     display: inline-block;
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .loader::after {
@@ -33,4 +36,45 @@
 
 body {
     background-color: wheat;
+}
+
+.error{
+    display: none;
+}
+
+.breed-select{
+    display: none;
+    margin-bottom: 50px;
+}
+
+.cat-info {
+    display: flex;
+}
+
+.img-cat{
+    width: 60%;
+    max-height: 100%;
+    margin-right: 20px;
+}
+
+.cat-name{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
+
+.cat-describe{
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
+
+.cat-temp{
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
+.cat-temp span{
+    font-weight: 600;
 }

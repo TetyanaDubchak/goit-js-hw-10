@@ -3,7 +3,7 @@ const API_KEY = 'live_ifYEKjAPHTIh5Jo0el1oTPVTiBdDHxjjlUD6ithjbmMrCDu08ALmrMtNGM
 
  function fetchBreeds() {
    
-   return fetch(`${BASE_URL}/breeds?api_key=${API_KEY}`).then(res => {
+   return fetch(`${BASE_URL}/breeds?aeepi_key=${API_KEY}`).then(res => {
     if (!res.ok) {
         throw new Error(res.statusText);
     }
