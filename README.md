@@ -11,5 +11,6 @@ CatSearcher is a web application that allows users to search for information abo
 ## Technologies
 CatSearcher is built using the following technologies:
 
-Frontend: JS, HTML, CSS
-External APIs: Cat API (provides cat breed information and images)
+<li>Frontend: JS, HTML, CSS</li>
+<li>External APIs: Cat API (provides cat breed information and images)</li>
+
