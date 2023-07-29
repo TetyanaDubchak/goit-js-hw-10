@@ -1,7 +1,7 @@
 # CatSearcher
 
 CatSearcher is a web application that allows users to search for information about different cat breeds and related topics. This application is designed to provide cat lovers with a centralized platform to discover and learn about various cat breeds, their characteristics, and more.
-Этот проект был создан при помощи Parcel.
+
 
 ## Features
 
