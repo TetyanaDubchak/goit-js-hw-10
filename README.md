@@ -8,3 +8,8 @@ CatSearcher is a web application that allows users to search for information abo
 1. Search for cat breeds: Users can enter the name of a specific cat breed or some keywords to find information about a particular cat breed.
 2. Cat breed details: Users can view detailed information about each cat breed, including their physical attributes, temperament.
 
+## Technologies
+CatSearcher is built using the following technologies:
+
+Frontend: JS, HTML, CSS
+External APIs: Cat API (provides cat breed information and images)
